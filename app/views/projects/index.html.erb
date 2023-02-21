@@ -1,0 +1,11 @@
+<h1>Artwork</h1>
+<p>All my art peices. All drawn on Medibang paint.</p>
+<ul>
+    <% @projects.each do |project| %>
+        <li>
+            <a href="/projects/<%= project.id %>">
+                <%= project.name %>
+            </a>
+        </li>
+    <% end %>
+</ul>
